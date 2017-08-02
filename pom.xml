@@ -33,6 +33,7 @@
 
 		<slf4j.api.version>1.7.21</slf4j.api.version>
 		<slf4j.simple.version>1.7.12</slf4j.simple.version>
+		<hsqldb.version>1.8.0.10</hsqldb.version>
 	</properties>
 
 	<dependencyManagement>

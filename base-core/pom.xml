@@ -3,9 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.base-project</groupId>
 	<artifactId>base-core</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 
 	<name>Core Project</name>
 	<description>Base Core Project</description>
@@ -17,12 +15,14 @@
 	</parent>
 
 	<dependencies>
-			<dependency>
-				<groupId>com.base-project</groupId>
-				<artifactId>base-model</artifactId>
-				<version>${project.version}</version>
-			</dependency>
+		<!--Local dependencies -->
+		<dependency>
+			<groupId>com.base-project</groupId>
+			<artifactId>base-model</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 
+		<!-- external dependencies -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -32,6 +32,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>hsqldb</groupId>
+			<artifactId>hsqldb</artifactId>
+			<version>${hsqldb.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
